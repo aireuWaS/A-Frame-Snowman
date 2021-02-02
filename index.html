@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>First VR World</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+        <a-box
+        width= 400
+        height = 400
+        depth= 0.00000001
+        color="red"
+        rotation= "90 0 0"
+        ></a-box>
+
+        <a-sphere 
+            position="0 1 -5"
+            color="gray"
+            width="4"
+            depth="4.2">
+
+                <a-sphere
+                position="0 1.75 0"
+                color="gray"
+                scale=".8 .8 .8"></a-sphere>
+
+                <a-sphere
+                position="0 3 0"
+                color="gray"
+                scale=".6 .6 .6"></a-sphere>
+                
+                <a-cylinder
+                position= "0 4 0"
+                height = 1
+                radius= .5
+                color="black"></a-cylinder>
+
+                <a-circle
+                position= "0 3.4 0" 
+                color="black"
+                rotation= "90 0 0"
+                side= "double"></a-circle>
+
+                <a-sphere
+                position= ".3 3 .6"
+                radius="0.1"
+                color= "black"></a-sphere>
+
+                <a-sphere
+                position= ".3 3 .68"
+                radius = 0.05
+                color= "blue"></a-sphere>
+
+                
+                <a-sphere
+                position= "-.3 3 .6"
+                radius="0.1"
+                color= "black"></a-sphere>
+        
+                <a-sphere
+                position= "-.3 3 .68"
+                radius = 0.05
+                color= "blue"></a-sphere>
+
+                <a-cone
+                position="0 2.9 .6"
+                radius-bottom=.25
+                color="orange"
+                rotation="90 0 0"></a-cone>
+        </a-sphere>
+      </a-scene>
+  </body>
+</html>
